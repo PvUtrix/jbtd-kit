@@ -1,4 +1,4 @@
-# Spec Kit
+# JBTD Kit
 
 *Build high-quality software faster.*
 
