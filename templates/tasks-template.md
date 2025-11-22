@@ -1,21 +1,21 @@
 ---
 
-description: "Task list template for feature implementation"
+description: "Task list template for job solution implementation"
 ---
 
-# Tasks: [FEATURE NAME]
+# Tasks: [JOB NAME]
 
-**Input**: Design documents from `/specs/[###-feature-name]/`
-**Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
+**Input**: Solution documents from `/jobs/[###-job-name]/`
+**Prerequisites**: solution.md (required), job.md (required for job scenarios), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the job definition.
 
-**Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
+**Organization**: Tasks are grouped by job scenario to enable independent implementation and testing of each scenario.
 
 ## Format: `[ID] [P?] [Story] Description`
 
 - **[P]**: Can run in parallel (different files, no dependencies)
-- **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
+- **[Scenario]**: Which job scenario this task belongs to (e.g., JS1, JS2, JS3 for Job Scenario 1, 2, 3)
 - Include exact file paths in descriptions
 
 ## Path Conventions
@@ -25,21 +25,21 @@ description: "Task list template for feature implementation"
 - **Mobile**: `api/src/`, `ios/src/` or `android/src/`
 - Paths shown below assume single project - adjust based on plan.md structure
 
-<!-- 
+<!--
   ============================================================================
   IMPORTANT: The tasks below are SAMPLE TASKS for illustration purposes only.
-  
-  The /speckit.tasks command MUST replace these with actual tasks based on:
-  - User stories from spec.md (with their priorities P1, P2, P3...)
-  - Feature requirements from plan.md
+
+  The /jbtd.tasks command MUST replace these with actual tasks based on:
+  - Job scenarios from job.md (with their priorities P1, P2, P3...)
+  - Solution requirements from solution.md
   - Entities from data-model.md
   - Endpoints from contracts/
-  
-  Tasks MUST be organized by user story so each story can be:
+
+  Tasks MUST be organized by job scenario so each scenario can be:
   - Implemented independently
   - Tested independently
   - Delivered as an MVP increment
-  
+
   DO NOT keep these sample tasks in the generated tasks.md file.
   ============================================================================
 -->
@@ -56,9 +56,9 @@ description: "Task list template for feature implementation"
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-**Purpose**: Core infrastructure that MUST be complete before ANY user story can be implemented
+**Purpose**: Core infrastructure that MUST be complete before ANY job scenario can be implemented
 
-**⚠️ CRITICAL**: No user story work can begin until this phase is complete
+**⚠️ CRITICAL**: No job scenario work can begin until this phase is complete
 
 Examples of foundational tasks (adjust based on your project):
 
@@ -69,15 +69,15 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] T008 Configure error handling and logging infrastructure
 - [ ] T009 Setup environment configuration management
 
-**Checkpoint**: Foundation ready - user story implementation can now begin in parallel
+**Checkpoint**: Foundation ready - job scenario implementation can now begin in parallel
 
 ---
 
-## Phase 3: User Story 1 - [Title] (Priority: P1) 🎯 MVP
+## Phase 3: Job Scenario 1 - [Title] (Priority: P1) 🎯 MVP
 
-**Goal**: [Brief description of what this story delivers]
+**Goal**: [Brief description of what this scenario delivers - the job it accomplishes]
 
-**Independent Test**: [How to verify this story works on its own]
+**Independent Test**: [How to verify this job scenario works on its own and accomplishes the user's job]
 
 ### Tests for User Story 1 (OPTIONAL - only if tests requested) ⚠️
 

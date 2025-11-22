@@ -50,7 +50,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 3. Load and analyze the implementation context:
    - **REQUIRED**: Read tasks.md for the complete task list and execution plan
-   - **REQUIRED**: Read plan.md for tech stack, architecture, and file structure
+   - **REQUIRED**: Read solution.md for tech stack, architecture, and file structure
    - **IF EXISTS**: Read data-model.md for entities and relationships
    - **IF EXISTS**: Read contracts/ for API specifications and test requirements
    - **IF EXISTS**: Read research.md for technical decisions and constraints
@@ -66,7 +66,7 @@ You **MUST** consider the user input before proceeding (if not empty).
      git rev-parse --git-dir 2>/dev/null
      ```
 
-   - Check if Dockerfile* exists or Docker in plan.md → create/verify .dockerignore
+   - Check if Dockerfile* exists or Docker in solution.md → create/verify .dockerignore
    - Check if .eslintrc* exists → create/verify .eslintignore
    - Check if eslint.config.* exists → ensure the config's `ignores` entries cover required patterns
    - Check if .prettierrc* exists → create/verify .prettierignore
@@ -77,7 +77,7 @@ You **MUST** consider the user input before proceeding (if not empty).
    **If ignore file already exists**: Verify it contains essential patterns, append missing critical patterns only
    **If ignore file missing**: Create with full pattern set for detected technology
 
-   **Common Patterns by Technology** (from plan.md tech stack):
+   **Common Patterns by Technology** (from solution.md tech stack):
    - **Node.js/JavaScript/TypeScript**: `node_modules/`, `dist/`, `build/`, `*.log`, `.env*`
    - **Python**: `__pycache__/`, `*.pyc`, `.venv/`, `venv/`, `dist/`, `*.egg-info/`
    - **Java**: `target/`, `*.class`, `*.jar`, `.gradle/`, `build/`
@@ -135,4 +135,4 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Confirm the implementation follows the technical plan
    - Report final status with summary of completed work
 
-Note: This command assumes a complete task breakdown exists in tasks.md. If tasks are incomplete or missing, suggest running `/speckit.tasks` first to regenerate the task list.
+Note: This command assumes a complete task breakdown exists in tasks.md. If tasks are incomplete or missing, suggest running `/jbtd.tasks` first to regenerate the task list.
